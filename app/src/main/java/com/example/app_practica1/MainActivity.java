@@ -2,6 +2,7 @@ package com.example.app_practica1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSumar, btnRestar, btnMulti, btnDividir, btnLimpiar,btnSalir;
+    Button btnSumar, btnRestar, btnMulti, btnDividir, btnLimpiar,btnSalir, btnSiguiente;
     EditText edt1, edt2;
     TextView tvres;
     Operaciones op = new Operaciones();
@@ -20,13 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         edt1 = findViewById(R.id.etv1);
         edt2 = findViewById(R.id.etv2);
-        btnSumar = findViewById(R.id.btnsumar);
-        btnRestar = findViewById(R.id.btnrestar);
-        btnMulti = findViewById(R.id.btnmulti);
-        btnDividir = findViewById(R.id.btndividir);
+        btnSumar = (Button) findViewById(R.id.btnsumar);
+        btnRestar = (Button) findViewById(R.id.btnrestar);
+        btnMulti = (Button) findViewById(R.id.btnmulti);
+        btnDividir = (Button) findViewById(R.id.btndividir);
         tvres = findViewById(R.id.tvres);
-        btnLimpiar = findViewById(R.id.btnLimpiar);
-        btnSalir = findViewById(R.id.btnSalir);
+        btnLimpiar = (Button) findViewById(R.id.btnLimpiar);
+        btnSalir = (Button) findViewById(R.id.btnSalir);
+        btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
         btnSumar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        btnSiguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent pantalla2 = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(pantalla2);
             }
         });
 

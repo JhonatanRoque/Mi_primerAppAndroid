@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">App de operaciones aritméticas</string>
+    <string name="head">Manejo de evento Click</string>
+    <string name="dato1">Ingrese el primer número</string>
+    <string name="dato2">Ingrese el segundo número</string>
+    <string name="boton1">Sumar</string>
+    <string name="boton2">Restar</string>
+    <string name="boton3">Multiplicar</string>
+    <string name="boton4"></string>
 </resources>
