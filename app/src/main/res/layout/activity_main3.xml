@@ -40,47 +40,52 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         >
+
         <Button
             android:id="@+id/btnSumar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/boton1"
             android:layout_margin="4dp"
-            android:textSize="12dp"
-            />
+            android:onClick="onClick"
+            android:text="@string/boton1"
+            android:textSize="12dp" />
+
         <Button
             android:id="@+id/btnRestar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/boton2"
             android:layout_margin="4dp"
-            android:textSize="12dp"
-            />
+            android:onClick="onClick"
+            android:text="@string/boton2"
+            android:textSize="12dp" />
+
         <Button
             android:id="@+id/btnMulti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/boton3"
             android:layout_margin="4dp"
-            android:textSize="12dp"
-            />
+            android:onClick="onClick"
+            android:text="@string/boton3"
+            android:textSize="12dp" />
+
         <Button
             android:id="@+id/btnDividir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/boton4"
             android:layout_margin="4dp"
-            android:textSize="12dp"
-            />
+            android:onClick="onClick"
+            android:text="@string/boton4"
+            android:textSize="12dp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
     <Button
         android:id="@+id/btnAcercaDe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/boton5"
-        android:textSize="12dp"
         android:layout_margin="5dp"
-        />
+        android:onClick="onClick"
+        android:text="@string/boton5"
+        android:textSize="12dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

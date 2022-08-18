@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity3 extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity implements View.OnClickListener{
     private Button btnVolver, b1, b2, b3, b4, b5;
     private EditText numero1, numero2;
     private TextView resu;
@@ -54,8 +54,8 @@ public class MainActivity3 extends AppCompatActivity {
         });
     }
 
-    public void OnClick(View v)
-    {
+    @Override
+    public void onClick(View v) {
         String valor1 = "";
         String valor2 = "";
         String mensaje1 = "";
